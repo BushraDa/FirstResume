@@ -4,17 +4,13 @@ header {
 	height: 300px;
 }
 
-header nav {
-	padding: 10px;
-}
-
 header nav ul {
 	list-style-type: none;
 }
 
 header nav li {
 	display: inline-block;
-	padding: 10px 10px;
+	padding: 20px 10px;
 }
 
 header nav a {
@@ -42,4 +38,13 @@ header .myInfo img {
 	margin-left: 100px;
 	margin-right: 30px;
 	max-width: 250px;
+}
+
+div.resume {
+	clear: both;
+	padding-top: 30px;
+}
+
+div section p {
+	padding-left: 10px;
 }
