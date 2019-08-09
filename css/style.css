@@ -1,5 +1,9 @@
+body {
+	font-size: 1.2em;
 
-header, footer{
+}
+
+header, footer {
 	background-color: #569dbd;
 	height: 300px;
 }
@@ -10,61 +14,66 @@ header nav ul {
 
 header nav li {
 	display: inline-block;
-	padding: 20px 10px;
+	padding: 1.5% 1.5%;
 }
 
 header nav a {
 	text-decoration: none;
-	font-size: 18px;
 	color: #444444;
 }
 
 header .myInfo {
-	padding-bottom: 20px;
+	padding-bottom: 2%;
 }
 
 header .myInfo .info {
-	padding-top: 10px;
+	padding-top: 1.5%;
 }
 
 header .myInfo .info i{
 	color: black;
-	padding: 5px;
-	font-size: 20px;
+	padding: 0.5%;
 }
 
 header .myInfo img {
 	float: left;
-	margin-left: 100px;
-	margin-right: 30px;
-	max-width: 250px;
+	margin-left: 10%;
+	margin-right: 2%;
+	max-width: 22%;
 }
 
 div.resume {
 	clear: both;
-	padding-top: 30px;
-	padding-left: 50px;
+	padding-top: 2.5%;
+	padding-left: 5%;
 }
 
-div section p {
-	padding-left: 10px;
+div section p, div section h5 {
+	padding-left: 1%;
+}
+
+
+.mySkills div {
+	display: inline-grid;
+	width: 30%;
 }
 
 footer h3 {
-	padding: 20px 50px;
+	padding: 2% 5%;
 }
 
 footer form {
-	padding-left: 70px;
+	padding-left: 7%;
 
 }
 
 footer form input {
-	width: 300px;
-	margin-bottom: 10px;
+	width: 30%;
+	margin-bottom: 1%;
 }
 
 footer form textarea {
-	width: 300px;
+	width: 30%;
 	height: 100px;
 }
+
