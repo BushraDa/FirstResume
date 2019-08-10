@@ -58,6 +58,21 @@ div section p, div section h5 {
 	width: 30%;
 }
 
+.portfolio div {overflow: hidden;}
+
+.portfolio div div {
+	float: left;
+	width: 30%;
+	padding: 1%;
+}
+
+.portfolio div img {
+	width: 100%;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
 footer h3 {
 	padding: 2% 5%;
 }
