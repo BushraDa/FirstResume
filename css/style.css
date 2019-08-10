@@ -5,41 +5,20 @@ body {
 
 header, footer {
 	background-color: #569dbd;
-	height: 300px;
+	
 }
 
-header nav ul {
-	list-style-type: none;
-}
-
-header nav li {
-	display: inline-block;
-	padding: 1.5% 1.5%;
-}
-
-header nav a {
-	text-decoration: none;
-	color: #444444;
-}
-
-header .myInfo {
-	padding-bottom: 2%;
+nav a {
+	color: #333333;
 }
 
 header .myInfo .info {
-	padding-top: 1.5%;
+	padding-top: 2%;
 }
 
 header .myInfo .info i{
 	color: black;
 	padding: 0.5%;
-}
-
-header .myInfo img {
-	float: left;
-	margin-left: 10%;
-	margin-right: 2%;
-	max-width: 22%;
 }
 
 div.resume {
@@ -92,3 +71,7 @@ footer form textarea {
 	height: 100px;
 }
 
+
+@media only screen and (max-width: 575px) {
+	
+}
