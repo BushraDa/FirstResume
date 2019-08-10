@@ -4,27 +4,38 @@
 	<meta charset="UTF-8">
 	<title>Bushra Daoud</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-	<header>
-	<div class="container">
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">IT Resume</a></li>
-				<li><a href="artResume.html">Art Resume</a></li>
-				<li><a href="#contactMe">Contact</a></li>
-			</ul>
-		</nav>
+	<nav class="navbar navbar-expand-lg bg-dark sticky-top">
+		<div class="container">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon">
+		    		<i class="fas fa-bars"></i>
+		    	</span>
+		  	</button>
 
-		<div class="myInfo">
-			<img src="images/profile.jpg" alt="profile picture">
-			<div class="info">
-				<h3>Bushra Daoud</h3>
-				<h6>Front-End Developer</h6>
-				<div class="cotactInfo">
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="nav navbar-nav mr-auto">
+					<li class="active">
+						<a href="#" class="nav-link">Home</a></li>
+					<li><a href="ItResume.html" class="nav-link">IT Resume</a></li>
+					<li><a href="artResume.html" class="nav-link">Art Resume</a></li>
+					<li><a href="#contactMe" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="container myInfo">
+			<div class="row">
+				<img class="col-lg-4 col-sm-5" src="images/profile.jpg" alt="profile picture">
+				<div class="info col">
+					<h3>Bushra Daoud</h3>
+					<h6>Front-End Developer, Calligrapher</h6>
 					<p>
 						Age: 25 <br>
 						Email: boushra.m.da@gmail.com <br>
@@ -43,10 +54,9 @@
 				</div> 
 			</div>
 		</div>
-	</div>
 	</header>
 
-	<div class="container resume">
+	<main class="container resume">
 
 		<section class="generalInfo">
 			<h3>Hi,</h3>
@@ -74,52 +84,53 @@
 
 		<section class="mySkills">
 			<h3>Skills</h3>
-			<div class="web">
-				<h5>Web Development</h5>
-				<ul>
-					<li>HTML</li>
-					<li>Css</li>
-					<li>JavaScript</li>
-					<li>JQuery</li>
-					<li>Bootstrap</li>
-					<li>Git</li>
-				</ul>
-			</div>
-			<div class="coding">
-				<h5>Programming Languages</h5>
-				<ul>
-					<li>Matlab</li>
-					<li>Java</li>
-					<li>C++</li>
-					<li>Python</li>
-				</ul>
-			</div>
-			<div class="oters">			
-				<h5>Others</h5>
-				<ul>
-					<li>Image Processing</li>
-					<li>Machine Learning</li>
-					<li>Algorithms</li>
-				</ul>
+			<div class="row">
+				<div class="web col-md-4 col-sm-6">
+					<h5>Web Development</h5>
+					<ul>
+						<li>HTML</li>
+						<li>Css</li>
+						<li>JavaScript</li>
+						<li>JQuery</li>
+						<li>Bootstrap</li>
+						<li>Git</li>
+					</ul>
+				</div>
+				<div class="coding col-md-4 col-sm-6">
+					<h5>Programming Languages</h5>
+					<ul>
+						<li>Matlab</li>
+						<li>Java</li>
+						<li>C++</li>
+						<li>Python</li>
+					</ul>
+				</div>
+				<div class="oters col-md-4 col-sm-6">			
+					<h5>Others</h5>
+					<ul>
+						<li>Image Processing</li>
+						<li>Machine Learning</li>
+						<li>Algorithms</li>
+					</ul>
+				</div>
 			</div>
 		</section>
+	</main>
 
-		<section class="myAchievments">
-
-		</section>
-
-	</div>
-
-	<footer >
+	<footer>
 		<div class="container">
-			<h3>Contact Me</h3>
-			<form id="contactMe">
-				<input type="Email" name="email" id="email" placeholder="Your Name">
-				<br>
-				<input type="text" name="subject" id="subject" placeholder="Your Email">
-				<br>
-				<textarea placeholder="Type the message here" ></textarea>
-			</form>
+			<div class="row">
+				<div class="col-lg-6 col-sm-12">
+					<h3>Contact Me</h3>
+					<form id="contactMe">
+						<input class="form-control" type="Email" name="email" id="email" placeholder="Your Name">
+						<br>
+						<input class="form-control" type="text" name="subject" id="subject" placeholder="Your Email">
+						<br>
+						<textarea class="form-control" placeholder="Type the message here" ></textarea>
+					</form>
+				</div>
+			</div>
 		</div>
 	</footer>
 

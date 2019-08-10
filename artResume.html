@@ -5,27 +5,38 @@
 	<title>Bushra Daoud</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width">
 	<script src="https://kit.fontawesome.com/0fa98177a4.js"></script>
 </head>
 <body>
 
-	<header>
-	<div class="container">
-		<nav>
-			<ul>
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="ItResume.html">IT Resume</a></li>
-				<li><a href="#">Art Resume</a></li>
-				<li><a href="#contactMe">Contact</a></li>
-			</ul>
-		</nav>
+	<nav class="navbar navbar-expand-lg bg-dark sticky-top">
+		<div class="container">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon">
+		    		<i class="fas fa-bars"></i>
+		    	</span>
+		  	</button>
 
-		<div class="myInfo">
-			<img src="images/profile.jpg" alt="profile picture">
-			<div class="info">
-				<h3>Bushra Daoud</h3>
-				<h6>Calligrapher</h6>
-				<div class="cotactInfo">
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="nav navbar-nav mr-auto">
+					<li><a href="index.html" class="nav-link">Home</a></li>
+					<li class="active">
+						<a href="ItResume.html" class="nav-link">IT Resume</a></li>
+					<li><a href="artResume.html" class="nav-link">Art Resume</a></li>
+					<li><a href="#contactMe" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="container myInfo">
+			<div class="row">
+				<img class="col-lg-4 col-sm-5" src="images/profile.jpg" alt="profile picture">
+				<div class="info col">
+					<h3>Bushra Daoud</h3>
+					<h6>Calligrapher</h6>
 					<p>
 						Age: 25 <br>
 						Email: boushra.m.da@gmail.com <br>
@@ -42,10 +53,9 @@
 				</div> 
 			</div>
 		</div>
-	</div>
 	</header>
 
-	<div class="container resume">
+	<main class="container resume">
 
 		<section class="generalInfo">
 			<h3>Hi,</h3>
@@ -86,36 +96,36 @@
 		<section class="portfolio">
 			<h3>Portfolio</h3>
 			<div class="images">
-				<div><img src="images/4.jpg" alt="image 1"></div>
-				<div><img src="images/5.jpg" alt="image 2"></div>
-				<div><img src="images/6.jpg" alt="image 3"></div>
-				<div><img src="images/7.jpg" alt="image 4"></div>
-				<div><img src="images/8.jpg" alt="image 5"></div>
-				<div><img src="images/9.jpg" alt="image 6"></div>
-				<div><img src="images/10.jpg" alt="image 7"></div>
-				<div><img src="images/11.jpg" alt="image 8"></div>
-				<div><img src="images/12.jpg" alt="image 9"></div>
-				<div><img src="images/13.jpg" alt="image 10"></div>
-				<div><img src="images/14.jpg" alt="image 11"></div>
-				<div><img src="images/15.jpg" alt="image 12"></div>
-				<div><img src="images/16.jpg" alt="image 13"></div>
-				<div><img src="images/17.jpg" alt="image 14"></div>
-				<div><img src="images/18.jpg" alt="image 15"></div>		
+				<img class="col-lg-3 col-sm-5" src="images/7.jpg" alt="image 4">
+				<img class="col-lg-3 col-sm-5" src="images/8.jpg" alt="image 5">
+				<img class="col-lg-3 col-sm-5" src="images/9.jpg" alt="image 6">
+				<img class="col-lg-3 col-sm-5" src="images/10.jpg" alt="image 7">
+				<img class="col-lg-3 col-sm-5" src="images/11.jpg" alt="image 8">
+				<img class="col-lg-3 col-sm-5" src="images/12.jpg" alt="image 9">
+				<img class="col-lg-3 col-sm-5" src="images/13.jpg" alt="image 10">
+				<img class="col-lg-3 col-sm-5" src="images/14.jpg" alt="image 11">
+				<img class="col-lg-3 col-sm-5" src="images/15.jpg" alt="image 12">
+				<img class="col-lg-3 col-sm-5" src="images/16.jpg" alt="image 13">
+				<img class="col-lg-3 col-sm-5" src="images/17.jpg" alt="image 14">
+				<img class="col-lg-3 col-sm-5" src="images/18.jpg" alt="image 15">
 			</div>
 		</section>
+	</main>
 
-	</div>
-
-	<footer >
+	<footer>
 		<div class="container">
-			<h3>Contact Me</h3>
-			<form id="contactMe">
-				<input type="Email" name="email" id="email" placeholder="Your Name">
-				<br>
-				<input type="text" name="subject" id="subject" placeholder="Your Email">
-				<br>
-				<textarea placeholder="Type the message here" ></textarea>
-			</form>
+			<div class="row">
+				<div class="col-lg-6 col-sm-12">
+					<h3>Contact Me</h3>
+					<form id="contactMe">
+						<input class="form-control" type="Email" name="email" id="email" placeholder="Your Name">
+						<br>
+						<input class="form-control" type="text" name="subject" id="subject" placeholder="Your Email">
+						<br>
+						<textarea class="form-control" placeholder="Type the message here" ></textarea>
+					</form>
+				</div>
+			</div>
 		</div>
 	</footer>
 

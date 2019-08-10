@@ -1,19 +1,17 @@
 body {
 	font-size: 1.2em;
-
 }
 
 header, footer {
 	background-color: #569dbd;
-	
 }
 
-nav a {
-	color: #333333;
+nav a, nav i {
+	color: #dddddd;
 }
 
 header .myInfo .info {
-	padding-top: 2%;
+	padding: 2%;
 }
 
 header .myInfo .info i{
@@ -21,57 +19,30 @@ header .myInfo .info i{
 	padding: 0.5%;
 }
 
-div.resume {
+header, main.resume, footer {
 	clear: both;
-	padding-top: 2.5%;
-	padding-left: 5%;
+	padding: 2% 5%;
 }
 
-div section p, div section h5 {
+section p, section h5, footer h3 {
 	padding-left: 1%;
 }
 
-
-.mySkills div {
-	display: inline-grid;
-	width: 30%;
-}
-
-.portfolio div {overflow: hidden;}
-
-.portfolio div div {
-	float: left;
-	width: 30%;
-	padding: 1%;
-}
-
-.portfolio div img {
-	width: 100%;
-    padding: 3px;
+.portfolio img {
+    padding: 0.5%;
+    margin: 0.5%;
     background-color: #fff;
     border: 1px solid #ccc;
 }
 
-footer h3 {
-	padding: 2% 5%;
-}
-
 footer form {
-	padding-left: 7%;
-
+	margin: 3%;
 }
 
-footer form input {
-	width: 30%;
-	margin-bottom: 1%;
-}
+@media only screen and (max-width: 700px) {
 
-footer form textarea {
-	width: 30%;
-	height: 100px;
-}
+  header .myInfo img {
+  	display: none;
+  }
 
-
-@media only screen and (max-width: 575px) {
-	
 }
