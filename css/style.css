@@ -47,6 +47,30 @@ footer form {
 	margin: 3%;
 }
 
+.mix {
+	display: none;
+}
+
+.categories ul {
+	list-style-type: none;
+	display: inline-block;
+	margin: 10px 0; 
+}
+.categories ul li {
+    color: #999;
+    border: 1px solid #999; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    float: left;
+}
+.categories ul li:hover, .categories ul li.active {
+    background-color: #1BBC9B; 
+    color: #fff; 
+    cursor: pointer;
+    border-color: #1BBC9B;
+}
+
 @media only screen and (max-width: 700px) {
 
   header .myInfo img {

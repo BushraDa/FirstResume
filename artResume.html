@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width">
-	<script src="https://kit.fontawesome.com/0fa98177a4.js"></script>
 </head>
 <body>
 
@@ -92,21 +91,29 @@
 			</ul>
 		</section>
 
-		<section class="portfolio">
+		<section class="portfolio" id="mixing">
 			<h3>Portfolio</h3>
+			<div class="categories">
+                    <ul class="shuffle">
+                        <li class="active filter" data-filter="all">All</li>
+                        <li class="filter" data-filter=".embroidery">Embroidery</li>
+                        <li class="filter" data-filter=".painting">Painting</li>
+                        <li class="filter" data-filter=".necklace">Necklace</li>
+                    </ul>
+            </div>
 			<div class="images">
-				<img class="col-lg-3 col-sm-5" src="images/7.jpg" alt="image 4">
-				<img class="col-lg-3 col-sm-5" src="images/8.jpg" alt="image 5">
-				<img class="col-lg-3 col-sm-5" src="images/9.jpg" alt="image 6">
-				<img class="col-lg-3 col-sm-5" src="images/10.jpg" alt="image 7">
-				<img class="col-lg-3 col-sm-5" src="images/11.jpg" alt="image 8">
-				<img class="col-lg-3 col-sm-5" src="images/12.jpg" alt="image 9">
-				<img class="col-lg-3 col-sm-5" src="images/13.jpg" alt="image 10">
-				<img class="col-lg-3 col-sm-5" src="images/14.jpg" alt="image 11">
-				<img class="col-lg-3 col-sm-5" src="images/15.jpg" alt="image 12">
-				<img class="col-lg-3 col-sm-5" src="images/16.jpg" alt="image 13">
-				<img class="col-lg-3 col-sm-5" src="images/17.jpg" alt="image 14">
-				<img class="col-lg-3 col-sm-5" src="images/18.jpg" alt="image 15">
+				<img class="col-lg-3 col-sm-5 mix painting" src="images/7.jpg" alt="image 4">
+				<img class="col-lg-3 col-sm-5 mix painting" src="images/8.jpg" alt="image 5">
+				<img class="col-lg-3 col-sm-5 mix painting" src="images/9.jpg" alt="image 6">
+				<img class="col-lg-3 col-sm-5 mix embroidery" src="images/10.jpg" alt="image 7">
+				<img class="col-lg-3 col-sm-5 mix embroidery" src="images/11.jpg" alt="image 8">
+				<img class="col-lg-3 col-sm-5 mix embroidery" src="images/12.jpg" alt="image 9">
+				<img class="col-lg-3 col-sm-5 mix embroidery" src="images/13.jpg" alt="image 10">
+				<img class="col-lg-3 col-sm-5 mix painting" src="images/14.jpg" alt="image 11">
+				<img class="col-lg-3 col-sm-5 mix necklace" src="images/15.jpg" alt="image 12">
+				<img class="col-lg-3 col-sm-5 mix necklace" src="images/16.jpg" alt="image 13">
+				<img class="col-lg-3 col-sm-5 mix necklace" src="images/17.jpg" alt="image 14">
+				<img class="col-lg-3 col-sm-5 mix necklace" src="images/18.jpg" alt="image 15">
 			</div>
 		</section>
 	</main>
@@ -130,7 +137,11 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/jquery.mixitup.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script src="https://kit.fontawesome.com/0fa98177a4.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
