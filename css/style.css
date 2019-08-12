@@ -4,11 +4,20 @@ html {
 
 body {
 	font-size: 1.2em;
-	width: 100%
+}
+
+header .myInfo .info {
+	padding: 2%;
 }
 
 header, footer {
 	background-color: #569dbd;
+}
+
+header img {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .subnav {
@@ -29,10 +38,6 @@ nav a, nav i {
 	color: #ffffbb;
 }
 
-header .myInfo .info {
-	padding: 2%;
-}
-
 header .myInfo .info i{
 	color: black;
 	padding: 0.5%;
@@ -41,7 +46,6 @@ header .myInfo .info i{
 main.resume, footer {
 	padding: 2% 0%;
 }
-
 
 ul.timeline {
     list-style-type: none;
@@ -90,6 +94,7 @@ footer form {
 #main {
 	min-height: 100vh;
 	margin-bottom: -300px;
+	width: 100%;
 }
 
 #main:after {
@@ -136,15 +141,33 @@ footer {
     border-color: #1BBC9B;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 575px) {
 
-	header .myInfo img {
-	  	display: none;
+	header img {
+		max-width: 35%;
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	header .info {
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 770px) {
+
+	main.resume, footer {
+		padding: 3% 3%;
 	}
 
 	.portfolio img {
-		width: 75%;
+		width: 70%;
 		margin-left: 10%;
+	}
+
+	.progress {
+		width: 60%;
 	}
 
 }
