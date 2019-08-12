@@ -9,6 +9,8 @@
 </head>
 <body>
 
+	<div id="main">
+
 	<nav class="navbar navbar-expand-lg bg-dark sticky-top">
 		<div class="container">
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +23,15 @@
 				<ul class="nav navbar-nav mr-auto">
 					<li class="active">
 						<a href="#" class="nav-link active">Home</a></li>
-					<li><a href="ItResume.html" class="nav-link">IT Resume</a></li>
+						<!---
+						<ul class="nav navbar-nav subnav" id="subnav">
+							<li><a href="#generalInfo" class="nav-link">Info</a></li>
+							<li><a href="#myGoals" class="nav-link">Goals</a></li>
+							<li><a href="#mySkills" class="nav-link">Skills</a></li>
+						</ul>
+					-->
+					<li><a href="ItResume.html" class="nav-link">IT Resume</a>
+					</li>
 					<li><a href="artResume.html" class="nav-link">Art Resume</a></li>
 					<li><a href="#contactMe" class="nav-link">Contact</a></li>
 				</ul>
@@ -54,9 +64,9 @@
 		</div>
 	</header>
 
-	<main class="container resume">
+	<main class="container resume" >
 
-		<section class="generalInfo">
+		<section class="generalInfo" id="generalInfo">
 			<h3>General Introduction</h3>
 			<p>My name is Bushra, I am 25 years old.
 			I am multitalented. I am a programmer and artist.
@@ -64,12 +74,12 @@
 			I like Math and programming. I love coding. I also like handmade products so I learned Arabic Calligraphy and Embroidery.<p>
 		</section>
 
-		<section class="myGoals">
+		<section class="myGoals" id="myGoals">
 			<h3>My Goals</h3>
 			<p>I hope to gain more knowledge and experience in my life. I wish to improve my weeknesses. I also want to help people as possible and make learning easier for them. I suffered a lot while I was learning and I searched a lot for the right way to reach my goals so I will try to summarize my knowledge maybe it will help someone else.</p>
 		</section>
 
-		<section class="mySkills">
+		<section class="mySkills" id="mySkills">
 			<h3>My Life Skills</h3>
 			<ul>
 				<li>Patience</li>
@@ -80,8 +90,9 @@
 				<li>Working hard</li>
 			</ul>
 		</section>
-
 	</main>
+
+	</div>
 
 	<footer>
 		<div class="container">
@@ -100,6 +111,7 @@
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/0fa98177a4.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
