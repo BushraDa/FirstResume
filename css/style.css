@@ -14,15 +14,8 @@ header, footer {
 	background-color: #569dbd;
 }
 
-header img {
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.subnav {
-	font-size: 0.75em;
-    padding-top: 1%;
+nav ul {
+	line-height: 30px;
 }
 
 nav a {
@@ -38,6 +31,25 @@ nav a, nav i {
 	color: #ffffbb;
 }
 
+.mainnav li.active .subnav {
+	font-size: 0.75em;
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.subnav {
+  overflow: hidden;
+  max-width: 0;
+  max-height: 0;
+  transition: all 1s ease-out;
+}
+
+header img {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 header .myInfo .info i{
 	color: black;
 	padding: 0.5%;
@@ -45,6 +57,9 @@ header .myInfo .info i{
 
 main.resume, footer {
 	padding: 2% 0%;
+}
+
+section {
 }
 
 ul.timeline {
@@ -171,8 +186,12 @@ footer {
 		margin-left: 10%;
 	}
 
-	.progress {
-		width: 60%;
+	.mainnav li.active {
+		display: inline-grid;
+	}
+
+	.mainnav li.active .subnav {
+		display: contents;
 	}
 
 }

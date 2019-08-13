@@ -20,19 +20,32 @@
 		  	</button>
 
 		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="nav navbar-nav mr-auto">
+				<ul class="nav navbar-nav mr-auto mainnav">
 					<li class="active">
-						<a href="#" class="nav-link active">Home</a></li>
-						<!---
-						<ul class="nav navbar-nav subnav" id="subnav">
+						<a href="#" class="nav-link active">Home</a>
+
+						<ul class="nav navbar-nav subnav">
 							<li><a href="#generalInfo" class="nav-link">Info</a></li>
 							<li><a href="#myGoals" class="nav-link">Goals</a></li>
 							<li><a href="#mySkills" class="nav-link">Skills</a></li>
 						</ul>
-					-->
-					<li><a href="ItResume.html" class="nav-link">IT Resume</a>
 					</li>
-					<li><a href="artResume.html" class="nav-link">Art Resume</a></li>
+					<li><a href="ItResume.html" class="nav-link">IT Resume</a>
+						<ul class="nav navbar-nav subnav">
+							<li><a href="ItResume.html#experience" class="nav-link">Experience</a></li>
+							<li><a href="ItResume.html#education" class="nav-link">Education</a></li>
+							<li><a href="ItResume.html#achievment" class="nav-link">Achievments</a></li>
+							<li><a href="ItResume.html#mySkills" class="nav-link">Skills</a></li>
+						</ul>
+					</li>
+					<li><a href="artResume.html" class="nav-link">Art Resume</a>
+						<ul class="nav navbar-nav subnav">
+							<li><a href="artResume.html#experience" class="nav-link">Experience</a></li>
+							<li><a href="artResume.html#education" class="nav-link">Education</a></li>
+							<li><a href="artResume.html#mySkills" class="nav-link">Skills</a></li>
+							<li><a href="artResume.html#portfolio" class="nav-link">Portfolio</a></li>
+						</ul>
+					</li>
 					<li><a href="#contactMe" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
@@ -73,7 +86,7 @@
 			<p>My name is Bushra, I am 25 years old.
 			I am multitalented. I am a programmer and artist.
 			My Education is in Software Engineering field and my hobby is in art.
-			I like Math and programming. I love coding. I also like handmade products so I learned Arabic Calligraphy and Embroidery.<p>
+			I like Math and programming. I love coding. I also like handmade products so I learned Arabic Calligraphy and Embroidery.</p>
 		</section>
 
 		<section class="myGoals" id="myGoals">
@@ -81,7 +94,8 @@
 			<p>I hope to gain more knowledge and experience in my life. I wish to improve my weeknesses. I also want to help people as possible and make learning easier for them. I suffered a lot while I was learning and I searched a lot for the right way to reach my goals so I will try to summarize my knowledge maybe it will help someone else.</p>
 		</section>
 
-		<section class="mySkills" id="mySkills">
+		<div class="row">
+		<section class="mySkills col-md-6 col-sm-12" id="mySkills">
 			<h3>My Life Skills</h3>
 			<ul>
 				<li>Patience</li>
@@ -92,6 +106,16 @@
 				<li>Working hard</li>
 			</ul>
 		</section>
+
+		<section class="languages col-md-6 col-sm-12" id="mySkills">
+			<h3>Languages</h3>
+			<ul>
+				<li>Arabic - Native Language</li>
+				<li>English - Intermediate</li>
+				<li>Spanish - Beginner</li>
+			</ul>
+		</section>
+		</div>
 	</main>
 
 	</div>

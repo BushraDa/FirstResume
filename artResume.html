@@ -19,10 +19,33 @@
 		  	</button>
 
 		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="nav navbar-nav mr-auto">
-					<li><a href="index.html" class="nav-link">Home</a></li>
-					<li><a href="ItResume.html" class="nav-link">IT Resume</a></li>
-					<li><a href="artResume.html" class="nav-link active">Art Resume</a></li>
+				<ul class="nav navbar-nav mr-auto mainnav">
+					<li>
+						<a href="index.html" class="nav-link">Home</a>
+
+						<ul class="nav navbar-nav subnav">
+							<li><a href="index.html#generalInfo" class="nav-link">Info</a></li>
+							<li><a href="index.html#myGoals" class="nav-link">Goals</a></li>
+							<li><a href="index.html#mySkills" class="nav-link">Skills</a></li>
+						</ul>
+					</li>
+					<li><a href="ItResume.html" class="nav-link">IT Resume</a>
+						<ul class="nav navbar-nav subnav">
+							<li><a href="ItResume.html#experience" class="nav-link">Experience</a></li>
+							<li><a href="ItResume.html#education" class="nav-link">Education</a></li>
+							<li><a href="ItResume.html#achievment" class="nav-link">Achievments</a></li>
+							<li><a href="ItResume.html#mySkills" class="nav-link">Skills</a></li>
+						</ul>
+					</li>
+					<li class="active">
+						<a href="#" class="nav-link active">Art Resume</a>
+						<ul class="nav navbar-nav subnav">
+							<li><a href="#experience" class="nav-link">Experience</a></li>
+							<li><a href="#education" class="nav-link">Education</a></li>
+							<li><a href="#mySkills" class="nav-link">Skills</a></li>
+							<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+						</ul>
+					</li>
 					<li><a href="#contactMe" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
@@ -62,11 +85,12 @@
 			<h3>Hi,</h3>
 			<p>Here I am A handmade lover. I worked in Calligraphy and Embroidery.
 				I made a lot of pieces from those tow skills.
-				I enjoy every detail and I hope to Improve it in future to be perfect.<p>
+				I enjoy every detail and I hope to Improve it in future to be perfect.</p>
 		</section>
 
-		<section class="myAchievments">
-			<h3>Achievments</h3>
+		<div class="row">
+		<section class="experience col-md-6 col-sm-12" id="experience">
+			<h3>Experience</h3>
 			<ul class="timeline">
 				<li>2019 - Now<br>
 					Teach kids how to improve thier handwriting.
@@ -77,7 +101,7 @@
 			</ul>
 		</section>
 
-		<section class="Eduction">
+		<section class="eduction col-md-6 col-sm-12" id="education">
 			<h3>Education</h3>
 			<p>Self Learning From Youtube.</p>
 			<ul class="timeline">
@@ -85,8 +109,8 @@
 				<li>2015 - Calligraphy</li>
 			</ul>
 		</section>
-
-		<section class="mySkills">
+		</div>
+		<section class="mySkills" id="mySkills">
 			<h3>My Skills</h3>
 			<ul>
 				<li>
@@ -129,7 +153,7 @@
 			</ul>
 		</section>
 
-		<section class="portfolio" id="mixing">
+		<section class="portfolio" id="mixing portfolio">
 			<h3>Portfolio</h3>
 			<div class="categories">
                     <ul class="shuffle">
