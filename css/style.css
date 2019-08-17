@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	font-size: 1.2em;
+	font-size: 1.05em;
 }
 
 header .myInfo .info {
@@ -27,9 +27,11 @@ nav a, nav i {
 	color: #dddddd;
 }
 
-.active, a:hover {
+nav .active, a:hover {
 	color: #ffffbb;
 }
+
+hr {background: none; border: 1px solid #aaa; margin: 2% 0%;}
 
 .mainnav li.active .subnav {
 	font-size: 0.75em;
@@ -45,8 +47,8 @@ nav a, nav i {
 }
 
 header img {
-	max-width: 100%;
-	margin-left: auto;
+	max-width: 80%;
+	margin-left: 10%;
 	margin-right: auto;
 }
 
@@ -59,7 +61,16 @@ main.resume, footer {
 	padding: 2% 0%;
 }
 
-section {
+.generalInfo a {
+	margin: 1%;
+}
+
+.hi p {
+	font-size: 1.2em;
+}
+
+section a:hover {
+	color: red;
 }
 
 ul.timeline {
@@ -95,9 +106,12 @@ section p, section h5, footer h3 {
 	padding-left: 1%;
 }
 
- section div p {
+h3 {
+	padding-bottom: 2%;
+}
+
+section div p {
  	padding-left: 2%;
- 	font-size: 0.9em;
  }
 
 .portfolio img {
@@ -105,6 +119,7 @@ section p, section h5, footer h3 {
     margin: 0.5%;
     background-color: #fff;
     border: 1px solid #ccc;
+    width: 100%;
 }
 
 footer form {
@@ -129,7 +144,7 @@ footer {
 
 .progress {
 	height: 20px;
-	width: 70%;
+	margin: 1%;
 }
 
 .progress-bar {
@@ -161,6 +176,34 @@ footer {
     border-color: #1BBC9B;
 }
 
+.images div {position: relative;}
+
+.overlay {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26,188,156,0.8);
+    line-height: 250px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.overly button {
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+
+div:hover > .overlay {
+	display: block;
+}
+
+
 @media only screen and (max-width: 575px) {
 
 	header img {
@@ -175,6 +218,13 @@ footer {
 
 }
 
+@media only screen and (max-width: 991px) {
+
+	.mainnav li.active .subnav {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 770px) {
 
 	main.resume, footer {
@@ -185,13 +235,12 @@ footer {
 		width: 70%;
 		margin-left: 10%;
 	}
+}
 
-	.mainnav li.active {
-		display: inline-grid;
-	}
+@media only screen and (max-width: 575px){
 
-	.mainnav li.active .subnav {
-		display: contents;
+	.myInfo h3 {
+		text-align: center;
 	}
 
 }

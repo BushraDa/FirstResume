@@ -7,8 +7,8 @@ $(document).ready(function() {
         	toggleLogic: 'and'
     	},
     	animation: {
-		    effects: 'fade rotateZ(-90deg)', /* fade scale */
-		    duration: 1000 /* 600 */
+		    effects: 'fade rotateZ(-90deg)', 
+		    duration: 1000
 	  	}
   });
 
