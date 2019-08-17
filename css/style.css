@@ -233,7 +233,9 @@ div:hover > .overlay {
 
 	.portfolio img {
 		width: 70%;
-		margin-left: 10%;
+	}
+	.itPortfolio img {
+		margin-left: 15%;
 	}
 }
 
