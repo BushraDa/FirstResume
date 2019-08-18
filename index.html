@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<title>Bushra Daoud</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 
 	<div id="main">
 
-	<nav class="navbar navbar-expand-lg bg-dark sticky-top">
+	<nav class="navbar navbar-expand-sm bg-dark fixed-top">
 		<div class="container">
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon">
-		    		<i class="fas fa-bars"></i>
-		    	</span>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+		    	<span class="navbar-toggler-icon">Menu</span>
 		  	</button>
 
-		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  	<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav mr-auto mainnav">
 					<li class="active">
 						<a href="#" class="nav-link active">Home</a>
@@ -88,33 +88,42 @@
 
 	<main class="container resume" >
 
-		<section class="generalInfo col-lg-7" id="generalInfo">
+		<section class="generalInfo" id="generalInfo">
 				<h3>General Introduction</h3>
 				<p>My name is Bushra, I am 25 years old.
 				I am multitalented. I am a programmer and artist.
 				My Education is in Software Engineering field and my hobby is in art.
 				I like Math and programming. I love coding. I also like handmade products so I learned Arabic Calligraphy and Embroidery. My personality type is<a href="https://www.16personalities.com/isfj-personality" target="_blank">ISFJ-T.</a></p>
 		</section>
-
-		<section class="myGoals col-lg-7" id="myGoals">
+		<hr>
+		<section class="myGoals" id="myGoals">
 			<h3>My Goals</h3>
-			<p>I hope to gain more knowledge and experience in my life. I wish to improve my weeknesses. I also want to help people as possible and make learning easier for them. I suffered a lot while I was learning and I searched a lot for the right way to reach my goals so I will try to summarize my knowledge maybe it will help someone else.</p>
+			<p>I hope to gain more knowledge and experience in my life. I wish to improve myself. I also want to help people as possible and make learning easier for them. I suffered a lot while I was learning and I searched a lot for the right way to reach my goals so I will try to summarize my knowledge maybe it will help someone else.</p>
 		</section>
-
+		<hr>
 		<div class="row">
-		<section class="mySkills col-md-6 col-sm-12" id="mySkills">
+		<section class="mySkills col-md-4 col-sm-12" id="mySkills">
 			<h3>My Life Skills</h3>
 			<ul>
 				<li>Patience</li>
 				<li>Problem Solving</li>
-				<li>Searching</li>
-				<li>Calmness</li>
 				<li>Learning new skills</li>
 				<li>Working hard</li>
+				<li>Commitment</li>
+				<li>Leadership</li>
 			</ul>
 		</section>
 
-		<section class="languages col-md-6 col-sm-12" id="languages">
+		<section class="hobbies col-md-4 col-sm-12" id="hobbies">
+			<h3>Hobbies</h3>
+			<ul>
+				<li>Reading</li>
+				<li>Watching Movies</li>
+				<li>Drawing</li>
+			</ul>
+		</section>
+
+		<section class="languages col-md-4 col-sm-12" id="languages">
 			<h3>Languages</h3>
 			<ul>
 				<li>Arabic - Native Language</li>
@@ -129,16 +138,21 @@
 
 	<footer>
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex justify-content-center" id="contactMe">
 				<div class="col-lg-6 col-sm-12">
 					<h3>Contact Me</h3>
-					<form id="contactMe">
-						<input class="form-control" type="Email" name="email" id="email" placeholder="Your Name">
+					Email: <a href="mailto:boushra.m.da@gmail.com">boushra.m.da@gmail.com</a>
+					<!--
+					<form id="contactMe" action="mailto:boushra.m.da@gmail.com">
+						<input class="form-control" type="text" name="subject" id="subject" placeholder="Your Subject">
 						<br>
-						<input class="form-control" type="text" name="subject" id="subject" placeholder="Your Email">
+						<input class="form-control" type="Email" name="email" id="email" placeholder="Your Email">
 						<br>
-						<textarea class="form-control" placeholder="Type the message here" ></textarea>
+						<textarea class="form-control" placeholder="Type the message here" rows="5" ></textarea>
+						<br>
+						<button type="submit" class="btn btn-primary">Send</button>
 					</form>
+				-->
 				</div>
 			</div>
 		</div>

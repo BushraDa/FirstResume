@@ -1,23 +1,28 @@
 {
   "name": "bushrada.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Website",
   "main": "index.html",
-  "dependencies": {},
-  "devDependencies": {
-    "lite-server": "^2.5.4"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"lite": "lite-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BushraDa/bushrada.github.io.git"
   },
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "resume"
+  ],
+  "author": "Bushra Daoud",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BushraDa/bushrada.github.io/issues"
   },
-  "homepage": "https://github.com/BushraDa/bushrada.github.io#readme"
+  "homepage": "https://github.com/BushraDa/bushrada.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
