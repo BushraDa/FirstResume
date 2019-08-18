@@ -4,8 +4,6 @@ html {
 
 body {
 	font-size: 1.07em;
-	padding:60px 0px 0px 0px;
-    z-index:0;
 }
 
 header .myInfo .info {
@@ -16,37 +14,8 @@ header, footer {
 	background-color: #569dbd;
 }
 
-nav ul {
-	line-height: 30px;
-}
-
-nav a {
-	display: inline-block;
-	float: left;
-}
-
-nav a, nav i {
-	color: #dddddd;
-}
-
-nav .active, a:hover {
-	color: #ffffbb;
-}
 
 hr {background: none; border: 1px solid #aaa; margin: 2% 0%;}
-
-/*.mainnav li.active .subnav {
-	font-size: 0.75em;
-    max-width: 100%;
-    max-height: 40px;
-}
-
-.subnav {
-  overflow: hidden;
-  max-width: 0;
-  max-height: 0;
-  transition: all 1s ease-out;
-} */
 
 header img {
 	max-width: 80%;
@@ -57,6 +26,10 @@ header img {
 header .myInfo .info i{
 	color: black;
 	padding: 0.5%;
+}
+
+.breadcrumb {
+	padding-left: 10%;
 }
 
 .resume, footer {
@@ -229,13 +202,6 @@ div:hover > .overlay {
 
 }
 
-@media only screen and (max-width: 991px) {
-
-	.mainnav li.active .subnav {
-		display: none;
-	}
-}
-
 @media only screen and (max-width: 770px) {
 
 	main.resume, footer {
@@ -252,16 +218,8 @@ div:hover > .overlay {
 
 @media only screen and (max-width: 575px){
 
-	body {
-	padding:50px 0px 0px 0px;
-	}
-
 	.myInfo h3 {
 		text-align: center;
-	}
-
-	.navbar-toggler-icon {
-		color: white;
 	}
 
 }
