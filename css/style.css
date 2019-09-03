@@ -11,7 +11,8 @@ header .myInfo .info {
 }
 
 header, footer {
-	background-color: #569dbd;
+	background-color: #333;
+	color: white;
 }
 
 
@@ -24,12 +25,40 @@ header img {
 }
 
 header .myInfo .info i{
-	color: black;
+	color: white;
 	padding: 0.5%;
 }
 
+.btn {
+	background-color: #333;
+	border-color: #333;
+}
+
+nav {
+	margin-top: 5px;
+	border-top:1px solid white;
+}
+
 .breadcrumb {
-	padding-left: 10%;
+	background-color: #333;
+	border-radius: 0;
+	display: inline-block;
+}
+
+.breadcrumb li {
+	display: inline-block;
+}
+
+nav a, .breadcrumb a {
+	color: pink;
+}
+
+nav a {
+	text-decoration-style: none;
+}
+
+nav a:hover {
+	color: pink;
 }
 
 .resume, footer {
