@@ -1,79 +1,61 @@
-html {
-  scroll-behavior: smooth;
+html {scroll-behavior: smooth;}
+
+body {font-size: 1.07em;}
+
+hr {background: none; border: 1px solid #aaa;}
+
+/* Header */
+header .myInfo .info {padding: 2%;}
+
+header img {max-width: -webkit-fill-available;}
+
+header .myInfo .info i {color: white; padding: 0.5%;}
+
+header, footer {background-color: #333;	color: white;}
+
+.resume, footer {padding: 2% 0%;}
+
+/* Sections */
+.generalInfo a {margin: 1%;}
+
+.hi p, .generalInfo p, .myGoals p {font-size: 1.13em;}
+
+.hi, .generalInfo, .myGoals {text-align: center;}
+
+.myRow section {padding-left: 5%;}
+.artEducation, .artExperience {padding-left: 10%;}
+
+/* styling the images in portfolio */
+.portfolio img {
+    padding: 0.5%;
+    margin: 0.5%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
 }
 
-body {
-	font-size: 1.07em;
+/* fixing page height to full whole screen */
+#main {
+	min-height: 100vh;
+	margin-bottom: -95px;
+	width: 100%;
 }
 
-header .myInfo .info {
-	padding: 2%;
+#main:after {
+	content: "";
+	display: block;
+	height: 150px;
 }
 
-header, footer {
-	background-color: #333;
-	color: white;
-}
+/* End of page height */
 
-hr {background: none; border: 1px solid #aaa; margin: 2% 0%;}
+/* Centering footer elements */
+footer {height: auto;text-align: center;}
 
-header img {
-	max-width: 80%;
-	margin-left: 10%;
-	margin-right: auto;
-}
+footer a {color: white;}
+/* End of footer */
 
-header .myInfo .info i{
-	color: white;
-	padding: 0.5%;
-}
-
-
-/*.breadcrumb {
-	background-color: #333;
-	border-radius: 0;
-	display: inline-block;
-	margin-top: 5px;
-	border-top:1px solid white;
-}*/
-
-/*.breadcrumb li {
-	display: inline-block;
-	margin-left: 5%;
-}*/
-
-nav a {
-	text-decoration-style: none;
-}
-
-.resume, footer {
-	padding: 2% 0%;
-}
-
-.generalInfo a {
-	margin: 1%;
-}
-
-.hi p, .generalInfo p, .myGoals p {
-	font-size: 1.2em;
-}
-
-.hi, .generalInfo, .myGoals {
-	text-align: center;
-}
-
-.skillsRow {
-	margin-left: 1%;
-}
-
-.myRow section {
-	padding-left: 5%;
-}
-
-section a:hover {
-	color: red;
-}
-
+/* Timeline theme */
 ul.timeline {
     list-style-type: none;
     position: relative;
@@ -102,70 +84,16 @@ ul.timeline > li:before {
     width: 20px;
     height: 20px;
 }
+/* End of Timeline */
 
-.artEducation, .artExperience {
-	padding-left: 10%;
-}
+/* Styling the progress bar */
+.progress {height: 20px; margin: 1%;}
 
+.progress-bar {height: 20px; background-color: #0069D9;}
+/*End of progress bar */
 
-section p, section h5, footer h3 {
-	padding-left: 1%;
-}
-
-h3 {
-	padding-bottom: 2%;
-}
-
-section div p {
- 	padding-left: 2%;
- }
-
-.portfolio img {
-    padding: 0.5%;
-    margin: 0.5%;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-
-footer form {
-	margin: 3%;
-}
-
-#main {
-	min-height: 100vh;
-	margin-bottom: -130px;
-	width: 100%;
-}
-
-#main:after {
-	content: "";
-	display: block;
-	height: 150px;
-}
-
-footer {
-	height: auto;
-	text-align: center;
-}
-
-footer a {
-	color: white;
-}
-
-.progress {
-	height: 20px;
-	margin: 1%;
-}
-
-.progress-bar {
-	height: 20px;
-	background-color: #0069D9;
-}
-
-.mix {
-	display: none;
-}
+/*  Mixing photos in artPortfolio   */
+.mix {display: none;}
 
 .categories ul {
 	list-style-type: none;
@@ -186,7 +114,9 @@ footer a {
     cursor: pointer;
     border-color: #0069D9;
 }
+/* End of Mix plugin */
 
+/* Overlay Theme for images in ItPortfolio */
 .images div {position: relative;}
 
 .overlay {
@@ -207,14 +137,15 @@ footer a {
     background: none;
     color: #fff;
     border: 1px solid #fff;
-
 }
 
 div:hover > .overlay {
 	display: block;
 }
+/* End of overlay */
 
 
+/* fixing header info order on mobile view */
 @media only screen and (max-width: 575px) {
 
 	header img {
@@ -223,35 +154,18 @@ div:hover > .overlay {
 	    margin-left: auto;
 	    margin-right: auto;
 	}
-	header .info {
-		text-align: center;
-	}
+	
+	.myInfo h3 {text-align: center;}
+	header .info {text-align: center;}
+
+	main.resume, footer {padding: 3% 3%;}
+	.experience, .education, .achievement {margin-left: auto !important;}
 
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 767px) {
 
-	main.resume, footer {
-		padding: 3% 3%;
-	}
-
-	.portfolio img {
-		width: 70%;
-	}
-	.itPortfolio img {
-		margin-left: 15%;
-	}
-
-	.myRow {
-		margin-left: 25%;
-	}
-
-}
-
-@media only screen and (max-width: 575px){
-
-	.myInfo h3 {
-		text-align: center;
-	}
+	.myRow {margin-left: 20%;}
+	.experience, .education, .achievement {margin-left: 10%;}
 
 }
