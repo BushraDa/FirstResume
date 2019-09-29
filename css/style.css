@@ -15,7 +15,6 @@ header, footer {
 	color: white;
 }
 
-
 hr {background: none; border: 1px solid #aaa; margin: 2% 0%;}
 
 header img {
@@ -29,36 +28,22 @@ header .myInfo .info i{
 	padding: 0.5%;
 }
 
-.btn {
-	background-color: #333;
-	border-color: #333;
-}
 
-nav {
-	margin-top: 5px;
-	border-top:1px solid white;
-}
-
-.breadcrumb {
+/*.breadcrumb {
 	background-color: #333;
 	border-radius: 0;
 	display: inline-block;
-}
+	margin-top: 5px;
+	border-top:1px solid white;
+}*/
 
-.breadcrumb li {
+/*.breadcrumb li {
 	display: inline-block;
-}
-
-nav a, .breadcrumb a {
-	color: pink;
-}
+	margin-left: 5%;
+}*/
 
 nav a {
 	text-decoration-style: none;
-}
-
-nav a:hover {
-	color: pink;
 }
 
 .resume, footer {
@@ -75,6 +60,14 @@ nav a:hover {
 
 .hi, .generalInfo, .myGoals {
 	text-align: center;
+}
+
+.skillsRow {
+	margin-left: 1%;
+}
+
+.myRow section {
+	padding-left: 5%;
 }
 
 section a:hover {
@@ -104,11 +97,16 @@ ul.timeline > li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #22c0e8;
+    border: 3px solid #0069D9;
     left: 20px;
     width: 20px;
     height: 20px;
 }
+
+.artEducation, .artExperience {
+	padding-left: 10%;
+}
+
 
 section p, section h5, footer h3 {
 	padding-left: 1%;
@@ -162,7 +160,7 @@ footer a {
 
 .progress-bar {
 	height: 20px;
-	background-color: #569dbd
+	background-color: #0069D9;
 }
 
 .mix {
@@ -183,10 +181,10 @@ footer a {
     float: left;
 }
 .categories ul li:hover, .categories ul li.active {
-    background-color: #1BBC9B; 
+    background-color: #0069D9; 
     color: #fff; 
     cursor: pointer;
-    border-color: #1BBC9B;
+    border-color: #0069D9;
 }
 
 .images div {position: relative;}
@@ -243,6 +241,11 @@ div:hover > .overlay {
 	.itPortfolio img {
 		margin-left: 15%;
 	}
+
+	.myRow {
+		margin-left: 25%;
+	}
+
 }
 
 @media only screen and (max-width: 575px){
