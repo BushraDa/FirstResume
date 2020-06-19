@@ -22,7 +22,7 @@ header, footer {background-color: #333;	color: white;}
 
 .hi, .generalInfo, .myGoals {text-align: center;}
 
-.myRow section {padding-left: 5%;}
+.myRow {padding-left: 5%;}
 .artEducation, .artExperience {padding-left: 10%;}
 
 /* styling the images in portfolio */
